@@ -86,7 +86,7 @@ while ($isMoreAvailable) {
             for ($carouselImageIndex = 0; $carouselImageIndex < count($carouselImages); $carouselImageIndex++) {
                 $idResource = $carouselImages[$carouselImageIndex]->getId();
                 $urlResource = $carouselImages[$carouselImageIndex]->getImageVersions2()->getCandidates()[0]->getUrl();
-                
+
                 $filename = "$usernameCreator"."_$idResource.jpg";
 
                 while(!$isResourceReceived) {
